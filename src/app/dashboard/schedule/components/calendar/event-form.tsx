@@ -1,29 +1,29 @@
 import { useEffect, useState } from 'react';
-import { Button } from '../../../../../components/ui/button';
-import { Input } from '../../../../../components/ui/input';
-import { Label } from '../../../../../components/ui/label';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '../../../../../components/ui/dialog';
-import { CalendarEvent } from '../../../../../types/calendar';
-import { Calendar } from '../../../../../components/ui/calendar';
+} from '@/components/ui/dialog';
+import { CalendarEvent } from '@/types/calendar';
+import { Calendar } from '@/components/ui/calendar';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '../../../../../components/ui/popover';
+} from '@/components/ui/popover';
 import { format } from 'date-fns';
 import { CalendarIcon } from 'lucide-react';
-import { cn } from '../../../../../utils/cn';
-import { ScrollArea, ScrollBar } from '../../../../../components/ui/scroll-area';
+import { cn } from '@/utils/cn';
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 import DentistSelector from './dentist-selector';
 import PatientSelector from './patient-selector';
-import { calculateEndTime } from '../../../../../utils/date-utils';
+import { calculateEndTime } from '@/utils/date-utils';
 import ServiceSelector from './service-selector';
-import { api } from '../../../../../lib/trpc/client';
+import { api } from '@/lib/trpc/client';
 import { toast } from 'sonner';
 import { useSession } from 'next-auth/react';
 import { Loader } from './loader';

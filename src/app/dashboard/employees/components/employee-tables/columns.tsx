@@ -2,8 +2,8 @@
 
 import { ColumnDef } from '@tanstack/react-table';
 import { CellAction } from './cell-action';
-import { Employee } from '../../../../../types/employee';
-import { Avatar, AvatarFallback, AvatarImage } from '../../../../../components/ui/avatar';
+import { Employee } from '@/types/employee';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { UserRound } from 'lucide-react';
 import * as React from 'react';
 

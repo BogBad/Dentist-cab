@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
-import type { CalendarEvent } from '../../../../../types/calendar';
-import { getTime, isToday } from '../../../../../utils/date-utils';
+import type { CalendarEvent } from '@/types/calendar';
+import { getTime, isToday } from '@/utils/date-utils';
 import { Loader } from './loader';
-import { filterEvents } from '../../../../../utils/filter-utils';
+import { filterEvents } from '@/utils/filter-utils';
 import { useSession } from 'next-auth/react';
-import { getEventStyle, getOverlappingGroups } from '../../../../../utils/schedule-utils';
+import { getEventStyle, getOverlappingGroups } from '@/utils/schedule-utils';
 import { EventForm } from './event-form';
 import { EventModal } from './event-modal';
 import { format } from 'date-fns';
 import { uk } from 'date-fns/locale';
-import { capitalize } from '../../../../../utils/string-utils';
+import { capitalize } from '@/utils/string-utils';
 import { toast } from 'sonner';
 
 interface WeekViewProps {

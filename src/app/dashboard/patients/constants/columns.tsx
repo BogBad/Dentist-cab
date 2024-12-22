@@ -1,10 +1,10 @@
 'use client';
 
 import { ColumnDef } from '@tanstack/react-table';
-import { Patient } from '../../../../types/patient';
-import { getDateOfBirth } from '../../../../utils/date-utils';
+import { Patient } from '@/types/patient';
+import { getDateOfBirth } from '@/utils/date-utils';
 import { CellAction } from '../components/cell-action';
-import { Avatar, AvatarFallback, AvatarImage } from '../../../../components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { UserRound } from 'lucide-react';
 import * as React from 'react';
 

@@ -1,7 +1,7 @@
 'use client';
 
-import { Badge } from '../badge';
-import { Button } from '../button';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Command,
   CommandEmpty,
@@ -10,17 +10,17 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from '../command';
+} from '@/components/ui/command';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '../popover';
-import { Separator } from '../separator';
+} from '@/components/ui/popover';
+import { Separator } from '@/components/ui/separator';
 import { CheckIcon, Plus } from 'lucide-react';
 import { Options } from 'nuqs';
 import React from 'react';
-import { cn } from '../../../utils/cn';
+import { cn } from '@/utils/cn';
 
 interface FilterOption {
   value: string;

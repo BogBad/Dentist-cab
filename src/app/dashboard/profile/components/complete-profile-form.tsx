@@ -1,22 +1,22 @@
 'use client';
-import { Card, CardContent, CardHeader, CardTitle } from '../../../../components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormLabel,
-} from '../../../../components/ui/form';
-import AvatarUpload from '../../../../components/avatar-upload';
-import { Input } from '../../../../components/ui/input';
+} from '@/components/ui/form';
+import AvatarUpload from '@/components/avatar-upload';
+import { Input } from '@/components/ui/input';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '../../../../components/ui/select';
-import { Button } from '../../../../components/ui/button';
+} from '@/components/ui/select';
+import { Button } from '@/components/ui/button';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -25,13 +25,13 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '../../../../components/ui/popover';
-import { cn } from '../../../../utils/cn';
+} from '@/components/ui/popover';
+import { cn } from '@/utils/cn';
 import { format } from 'date-fns';
 import { CalendarIcon } from 'lucide-react';
-import { Calendar } from '../../../../components/ui/calendar';
-import { api } from '../../../../lib/trpc/client';
-import { createAvatarPath } from '../../../../utils/create-avatar-path';
+import { Calendar } from '@/components/ui/calendar';
+import { api } from '@/lib/trpc/client';
+import { createAvatarPath } from '@/utils/create-avatar-path';
 import { uk } from 'date-fns/locale';
 import { toast } from 'sonner';
 

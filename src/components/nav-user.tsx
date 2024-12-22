@@ -1,12 +1,12 @@
 'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from './ui/sidebar';
-import UserDropdown from './user-dropdown';
+} from '@/components/ui/sidebar';
+import UserDropdown from '@/components/user-dropdown';
 import { useSession } from 'next-auth/react';
 import { UserRound } from 'lucide-react';
 import * as React from 'react';

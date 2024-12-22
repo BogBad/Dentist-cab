@@ -1,13 +1,13 @@
 import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
-import { Button } from '../../../../../components/ui/button';
-import { Input } from '../../../../../components/ui/input';
-import { ToggleGroup, ToggleGroupItem } from '../../../../../components/ui/toggle-group';
-import { CalendarView } from '../../../../../types/calendar';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+import { CalendarView } from '@/types/calendar';
 import { useQueryState } from 'nuqs';
 import { useEffect } from 'react';
 import { format } from 'date-fns';
 import { uk } from 'date-fns/locale';
-import { capitalize } from '../../../../../utils/string-utils';
+import { capitalize } from '@/utils/string-utils';
 
 interface CalendarHeaderProps {
   currentDate: Date;
